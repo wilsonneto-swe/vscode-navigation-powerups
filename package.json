@@ -1,10 +1,10 @@
 {
-  "name": "navigation-powerups",
-  "displayName": "Navigation Power-ups",
+  "name": "http-navigation-powerups",
+  "displayName": "Http Navigation Power-ups",
   "description": "Navigate smarter, not harder :)",
   "version": "1.1.0",
-  "repository": "https://github.com/wilsonneto-dev/navigation-powerups",
-  "publisher": "wilsonneto-dev",
+  "repository": "https://github.com/wilsonneto-swe/vscode-navigation-powerups",
+  "publisher": "wilsonneto-swe",
   "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#C80000",
@@ -32,7 +32,7 @@
       "navigation": [
         {
           "id": "navigation",
-          "name": ""
+          "name": "Http Navigation Power-ups"
         }
       ] 
     }
