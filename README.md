@@ -2,41 +2,22 @@
 
 ## Overview
 
-**Navigation Power-ups** is a Visual Studio Code extension that enhances your file navigation experience by adding a left bar navigation tree to files that haven't it natively. The extension is designed to support a variety of file types, offering an easy-to-use interface for jumping between sections, headers, or requests within supported files.
-
-Currently, the extension supports `.http` and `.md` files, feel free to add any other file types you miss.
+**Navigation Power-ups** is a Visual Studio Code extension that enhances your `.http` file navigation experience by adding a left bar navigation tree. The extension provides an easy-to-use interface for jumping between sections and requests within your HTTP files.
 
 ## Features
 
-- **Navigation for Supported Files**: Automatically builds a navigation bar for specific file types, allowing for quick and easy access to different sections, headers, or requests within the file.
-
-
-## Supported File Types
-
-| File Type | Description                                      | Navigation Rules                                                                 |
-|-----------|--------------------------------------------------|----------------------------------------------------------------------------------|
-| `.http`   | HTTP request files                               | Navigation based on `###` for requests. Headers with more than `###` are sections.|
-| `.md`     | Markdown files                                   | Navigation based on headers (`#`, `##`, `###`, etc).                              |
-| More      | Additional file types *(Planned for future)*     | TBD                                                                              |
+- **Navigation Tree for .http Files**: Automatically builds a navigation bar for `.http` files, allowing for quick and easy access to different sections and requests within the file.
+- **Real-time Updates**: The navigation tree updates automatically as you edit your HTTP files.
 
 ## Setup
 
 1. **Install the Extension**: Search for "Navigation Power-ups" in the VS Code marketplace and install the extension.
-   
-2. **Open a Supported File**: Open a `.http` file in your workspace, and the extension will automatically generate a navigation tree in the side panel. Each section or request will appear as a navigable node.
+
+2. **Open an HTTP File**: Open a `.http` file in your workspace, and the extension will automatically generate a navigation tree in the side panel. Each section or request will appear as a navigable node.
 
 3. **Navigate Through the File**: Click on any node in the navigation tree to jump directly to that section or request in the file.
 
-4. **Real-time Updates**: As you make changes to the file (such as adding new sections, editing headers, or removing requests), the tree will update in real time to reflect these changes.
-
-### Markdown Files
-
-To be able to see the navigation left menu in markdown files, you just need to open the file and click in the plugin icon in the left bar.
-
-![Markdown file support](images/readme-markdown-eg.png)
-
-
-### HTTP Files
+## How It Works
 
 In `.http` files, the extension uses the number of `#` characters to differentiate between sections and requests:
 
